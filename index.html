@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="cs" prefix="og: http://ogp.me/ns#">
-   <head>
-    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1136499804525056120/1138264780205985892/IMG_0657_square.JPG" />
+<html lang="cs" prefix="og: http://ogp.me/ns#"><head>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1136499804525056120/1138264780205985892/IMG_0657_square.JPG">
         <style>/* paris.css */
             :root {
                 --bg: #222222;
@@ -94,6 +92,13 @@
             code {
                 font-size: 1.1em
             }
+
+            audio {
+                width:300px;
+                height: 32px;
+                position:fixed;
+                top:81.5px
+            }
             
             a {
                 color: var(--link);
@@ -119,7 +124,9 @@
             }
             
             .content p {
-                margin-block:1em}
+                margin-block:1em;
+                margin-right: 9em;
+            }
             
             .content img {
                 max-width: 100%;
@@ -376,7 +383,7 @@
             .navigation ul li ul {
                 padding: .3em;
                 position: absolute;
-                width: 12em;
+                width: 92.6px;
                 background: var(--bg);
                 z-index: 100;
                 display: none;
@@ -434,31 +441,48 @@
                 line-height: normal
             }
             
-            .btn {
+            button {
                 margin: 0;
-                padding: 4px 22px;
+                padding: 3.5px 0px;
                 display: inline-block;
-                min-width: 7em;
-                background-color: #eaeaea;
-                color: #333;
-                background-image: linear-gradient(to bottom,#f8f8f8,#e1e1e1);
+                min-width: 4em;
+                background-color: #6b6b6b;
+                color: #c5c5c5;
+                background-image: linear-gradient(to bottom,#6b6b6b,#6b6b6b);
                 border: 1px solid var(--border);
-                border-color: #c1c1c1 #c1c1c1 #aaa;
-                border-radius: 4px;
-                outline-offset: -2px;
-                font-size: .9em;
+                border-color: #6b6b6b #6b6b6b #6b6b6b;
+                border-radius: 10px;
+                outline-offset: 0px;
+                font-size: .8em;
                 font-family: inherit;
-                font-weight: 400;
+                font-weight: 350;
                 line-height: 1;
                 text-align: center;
                 text-decoration: none;
-                box-sizing: border-box
+                box-sizing: border-box;
+                position: relative;
+                top: -13.5;
             }
             
-            .btn:hover,.btn:focus,.btn:active {
-                color: #333;
-                background-image: none;
-                text-decoration: none
+            button:hover,button:focus,button:active {
+                color: #444444;
+                background-image: linear-gradient(to bottom,#444444,#444444);
+                padding: 3.5px 0px;
+                display: inline-block;
+                max-width: 4em;
+                color: #c5c5c5;
+                border: 1px solid var(--border);
+                border-color: #6b6b6b #6b6b6b #6b6b6b;
+                border-radius: 10px;
+                outline-offset: 0px;
+                font-size: .8em;
+                font-family: inherit;
+                font-weight: 350;
+                line-height: 1;
+                text-align: center;
+                text-decoration: none;
+                box-sizing: border-box;
+                cursor: pointer;
             }
             
             .btn:active {
@@ -517,23 +541,24 @@
             }
             </style>
       <title>The Website - Fabian Diaz </title>
-      <meta charset="utf-8" />
-      <meta name="links" content="1. Instagram 1.1. Twitter 1.2. Twitch" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Fabian Diaz" />
-      <meta property="og:site_name" content="The Website - Fabian Diaz" />
-      <meta property="og:links" content="1. Instagram 1.1. Twitter 1.2. Twitch" />
-      <meta property="og:image" content="https://cdn.discordapp.com/attachments/1136499804525056120/1138264780205985892/IMG_0657_square.JPG" />
-      <meta property="og:image:alt" content="Fabian Diaz" />
+      <meta charset="utf-8">
+      <meta name="links" content="Instagram Twitter Twitch">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Fabian Diaz">
+      <meta property="og:site_name" content="The Website - Fabian Diaz">
+      <meta property="og:links" content="1. Instagram 1.1. Twitter 1.2. Twitch">
+      <meta property="og:image" content="https://cdn.discordapp.com/attachments/1136499804525056120/1138264780205985892/IMG_0657_square.JPG">
+      <meta property="og:image:alt" content="Fabian Diaz">
    </head>
    <body>
       <div class="page layout-default">
          <div class="header" role="banner">
             <div class="sitename">
-                <h2><img class="sitename-logo" src="https://cdn.discordapp.com/attachments/1136499804525056120/1138264780205985892/IMG_0657_square.JPG" loading="lazy"></img><a href="https://dfab512.github.io/">@dfab512</a></h2>
+                <h2><img class="sitename-logo" src="https://cdn.discordapp.com/attachments/1136499804525056120/1138264780205985892/IMG_0657_square.JPG" loading="lazy"><a href="https://dfab512.github.io/">@dfab512</a></h2>
             </div>
             <div class="sitename-banner"></div>
+            
             <div class="navigation" role="navigation">
                <ul>
                   <li>
@@ -555,7 +580,14 @@
                   </li>
                </ul>
             </div>
-            <div class="navigation-banner"></div>
+            <audio id="player" src="https://cdn.discordapp.com/attachments/1136499804525056120/1138531171458895913/01._.mp3"></audio> <p>Song of the Week / Akina Nakamori - Slow Motion</p>
+                <div> 
+                    <button onclick="document.getElementById('player').play()">Play</button> 
+                    <button onclick="document.getElementById('player').pause()">Pause</button> 
+                    <button onclick="document.getElementById('player').volume += 0.1">+ </button> 
+                    <button onclick="document.getElementById('player').volume -= 0.1">- </button> 
+                </div>
+              <div class="navigation-banner"></div>
          </div>
          <div class="content">
             <img src="https://cdn.discordapp.com/attachments/1136499804525056120/1138366146509291520/DSC2619_edit2.jpg">
@@ -563,22 +595,60 @@
                <h1>Fabian Diaz</h1>
                <ul class="toc">
                   <h4>My Links</h4>
-                  <li class="toc2"><a href="https://www.instagram.com/dfab512/">1. Instagram</a></li>
-                  <li class="toc2"><a href="https://twitter.com/photographywlk">1.1. Twitter <a href="https://twitter.com/photographywlk"></a></a></li>
-                  <li class="toc2"><a href="https://www.youtube.com/channel/UCeqq-UwBj4Ljsddi0YPKbJQ">1.2. YouTube <a href="https://www.youtube.com/channel/UCeqq-UwBj4Ljsddi0YPKbJQ"></a></a></li>
+                  <li class="toc2"><a href="https://www.instagram.com/dfab512/">Instagram</a></li>
+                  <li class="toc2"><a href="https://twitter.com/photographywlk">Twitter</a><a href="https://twitter.com/photographywlk"></a></li>
+                  <li class="toc2"><a href="https://www.youtube.com/channel/UCeqq-UwBj4Ljsddi0YPKbJQ">YouTube</a><a href="https://www.youtube.com/channel/UCeqq-UwBj4Ljsddi0YPKbJQ"></a></li>
                </ul>
                <h5>A website for my personal life and interests</h5>
                   <p>Hi, my name is Fabian and I am a hobbyist living in the Bay Area. I am currently a high school student and will be graduating this year. 
                     While my most ‘serious’ hobby is photography, 
                     I am also interested in computers, music production, audio equipment, and video games. 
                     I’ve never been good at sharing what I do so, I hope to document some of that here. Thanks!</p>
-               </ul>
-               <hr/>
+               
+               <hr>
             </div>
          </div>
          <div class="footer" role="contentinfo">
             <div class="siteinfo-banner"></div>
          </div>
       </div>
-   </body>
-</html>
+   <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
