@@ -1,4 +1,4 @@
-<html lang="cs" prefix="og: http://ogp.me/ns#"><head>
+<html lang="en" prefix="og: http://ogp.me/ns#"><head>
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1136499804525056120/1138264780205985892/IMG_0657_square.JPG">
         <style>/* paris.css */
             :root {
@@ -579,6 +579,17 @@
                      </ul>
                   </li>
                </ul>
+               <script>
+                // JavaScript to make the dropdown menu clickable on mobile
+                const menuItems = document.querySelectorAll('.menu-item');
+        
+                menuItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        const submenu = this.nextElementSibling;
+                        submenu.classList.toggle('show-submenu');
+                    });
+                });
+            </script>
             </div>
             <audio id="player" src="https://cdn.discordapp.com/attachments/1136499804525056120/1138531171458895913/01._.mp3"></audio> <p>Song of the Week / Akina Nakamori - Slow Motion</p>
                 <div> 
