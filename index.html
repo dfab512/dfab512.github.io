@@ -32,21 +32,33 @@
                   </li>
                </ul>
                <script>
-                  document.addEventListener('DOMContentLoaded', function() {
-                  const menuItems = document.querySelectorAll('.navigation li a'); // Target the <a> elements within the list items
-                  menuItems.forEach(item => {
-                  item.addEventListener('click', function(event) {
-                  if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768 pixels (you can adjust this value)
-                  event.preventDefault(); // Prevent the default link behavior on mobile devices
-                  const submenu = this.nextElementSibling; // Use nextElementSibling to select the submenu
-                  submenu.classList.toggle('show-submenu');
-                  if (submenu && submenu.classList.contains('submenu')) {
-                    event.preventDefault(); // Prevent the default link behavior for main menu items
-                    submenu.classList.toggle('show-submenu');
+                 document.addEventListener('DOMContentLoaded', function() {
+                     const menuItems = document.querySelectorAll('.navigation li a'); // Target the <a> elements within the list items
+                     const submenus = document.querySelectorAll('.navigation .submenu'); // Target the submenus
+
+                     menuItems.forEach(item => {
+                        item.addEventListener('click', function(event) {
+                           if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768 pixels (you can adjust this value)
+                              const submenu = this.nextElementSibling; // Use nextElementSibling to select the submenu
+
+                              if (submenu) {
+                                 event.preventDefault(); // Prevent the default link behavior on mobile devices
+                                    submenu.classList.toggle('show-submenu'); // Toggle the submenu
+                           } 
+                        }
+                   });
+               });
+
+               // Add event listeners to the submenus to allow clicking on them
+               submenus.forEach(submenu => {
+                  submenu.addEventListener('click', function(event) {
+                     if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768 pixels (you can adjust this value)
+                        event.stopPropagation(); // Prevent the submenu click event from propagating to the top-level menu item
                   }
                });
             });
          });
+
                </script>
             </div>
             <audio id="player" src="docs\assets\05 Tree Among Shrubs.mp3"></audio>
