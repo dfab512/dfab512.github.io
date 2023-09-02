@@ -296,7 +296,9 @@
     .navigation a {
     color: var(--text);
     text-decoration: none;
-    padding: 0
+    padding: 2;
+    position: relative;
+    left: 3;
     }
     .navigation a:hover {
     border-bottom: solid 2px var(--link)
@@ -461,6 +463,8 @@
     .navigation a {
     text-decoration: none;
     color: #c2c2c2;
+    position: relative;
+    left: 3;
     }
     /* Styles for the dropdown menu */
     .submenu {
