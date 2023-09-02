@@ -33,12 +33,12 @@
                </ul>
                <script>
                   document.addEventListener('DOMContentLoaded', function() {
-                  const menuItems = document.querySelectorAll('.navigation li'); // Target the li elements
-                  menuItems.forEach(item => {
-                  item.addEventListener('click', function(event) {
-                  event.preventDefault();
-                  const submenu = this.querySelector('.submenu');
-                  submenu.classList.toggle('show-submenu');
+                     const menuItems = document.querySelectorAll('.navigation li'); // Target the li elements
+                     menuItems.forEach(item => {
+                      item.addEventListener('click', function(event) {
+                         event.preventDefault();
+                         const submenu = this.querySelector('.submenu');
+                         submenu.classList.toggle('show-submenu');
                });
             });
          });
