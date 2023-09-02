@@ -303,11 +303,54 @@ a:hover {
     max-width: calc(100vw - 400px)
 }
 
-@media screen and (min-width: 72em) {
-    .content .portret+h2+h3+ul {
-        max-width:calc(400px + 30vw)
-    }
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
+
+.column {
+    flex-basis: calc(33.33% - 20px); /* Set width for each column with margin */
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+}
+
+/* Center the images within each column */
+.column img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .column p {
+        margin-top: -150;
+        margin-left: 110;
+        margin-right: -230;
+    }
+    .column-container {
+        flex-direction: column; 
+    }
+    
+    .column {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    
+    .column:last-child {
+        margin-right: 0; /* Remove margin from the last column */
+    }
+    
+    /* Center the images within each column */
+    .column img {
+        display: block;
+        margin: 0 auto;
+    }    
+}
+
+
 
 .content .rounded {
     border-radius: 4px
@@ -451,7 +494,7 @@ button {
     text-decoration: none;
     box-sizing: border-box;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 2.3em;
     
 }
 
