@@ -33,15 +33,15 @@
                </ul>
                <script>
                   document.addEventListener('DOMContentLoaded', function() {
-                  const menuItems = document.querySelectorAll('.menu-item');
+                  const menuItems = document.querySelectorAll('.navigation li'); // Target the li elements
                   menuItems.forEach(item => {
                   item.addEventListener('click', function(event) {
                   event.preventDefault();
                   const submenu = this.querySelector('.submenu');
                   submenu.classList.toggle('show-submenu');
-                  });
-                  });
-                  });
+               });
+            });
+         });
                </script>
             </div>
             <audio id="player" src="docs\assets\05 Tree Among Shrubs.mp3"></audio>
