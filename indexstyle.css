@@ -1,5 +1,5 @@
 :root {
-    --bg: #222222;
+    --bg: #1f2120;
     --code-bg: #111;
     --notice1-bg: #653;
     --notice2-bg: #ede3e2;
@@ -473,7 +473,7 @@
     color: #c2c2c2;
     position: relative;
     left: 3;
-    top: -7.57;
+    top: -7.6px;
     }
     /* Styles for the dropdown menu */
     .submenu {
