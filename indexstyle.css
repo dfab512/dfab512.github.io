@@ -1,14 +1,14 @@
 :root {
-    --bg: #1f2120;
+    --bg: #F5F5F7;
     --code-bg: #111;
     --notice1-bg: #653;
     --notice2-bg: #ede3e2;
     --notice3-bg: #e7e7e7;
-    --heading: #f7f7f7;
-    --text: #c2c2c2;
+    --heading: #575757;
+    --text: #646464;
     --bold: #d1a394;
     --code: #ddd;
-    --link: rgb(115, 151, 128);
+    --link: rgb(155, 180, 226);
     --link-active: #4ba;
     --blockquote: #777;
     --notice1-accent: #fb0;
@@ -64,15 +64,18 @@
     font-size: 1.4em
     }
     h4 {
-    font-size: 1.1em;
-    margin-block-start:.8em;margin-block-end:.3em}
+    font-size: 1.02em;
+    margin-block-start:-10px;
+    margin-block-end:.3em;
+    margin-right: 29px;
+    }
     h5 {
     font-size: 0.7em;
     margin-block-start:0em;margin-block-end:1em; opacity:0.6;}
     hr {
     height: 1px;
     min-width: 100px;
-    background: var(--separator);
+    background: #c1c1c1;
     border: 0;
     margin-block:2em}
     strong {
@@ -330,7 +333,7 @@
     background: var(--bg);
     z-index: 100;
     display: none;
-    border: 1px solid var(--border);
+    border: 1px solid #f1f1f1;
     border-radius: 4px;
     box-shadow: 2px 4px 10px rgba(0,0,0,.2);
     top: 35;
@@ -378,14 +381,14 @@
     }
     button {
     margin: 0;
-    padding: 3.5px 0px;
+    padding: 2.5px 0px;
     display: inline-block;
     min-width: 4em;
-    background-color: #6b6b6b;
-    color: #c5c5c5;
-    background-image: linear-gradient(to bottom,#6b6b6b,#6b6b6b);
+    background-color: #c9c9c9;
+    color: #878787;
+    background-image: linear-gradient(to bottom,#dadada,#dadada);
     border: 1px solid var(--border);
-    border-color: #6b6b6b #6b6b6b #6b6b6b;
+    border-color: #dadada #dadada #dadada;
     border-radius: 10px;
     outline-offset: 0px;
     font-size: .8em;
@@ -400,13 +403,13 @@
     }
     button:hover,button:focus,button:active {
     color: #444444;
-    background-image: linear-gradient(to bottom,#444444,#444444);
-    padding: 3.5px 0px;
+    background-image: linear-gradient(to bottom,#838383,#838383);
+    padding: 2.5px 0px;
     display: inline-block;
     max-width: 4em;
     color: #c5c5c5;
     border: 1px solid var(--border);
-    border-color: #6b6b6b #6b6b6b #6b6b6b;
+    border-color: #838383 #838383 #838383;
     border-radius: 10px;
     outline-offset: 0px;
     font-size: .8em;
@@ -473,7 +476,7 @@
     color: #c2c2c2;
     position: relative;
     left: 3;
-    top: -7.6px;
+    top: -11;
     }
     /* Styles for the dropdown menu */
     .submenu {

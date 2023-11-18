@@ -1,14 +1,14 @@
 :root {
-    --bg: #1f2120;
+    --bg: #F5F5F7;
     --code-bg: #111;
     --notice1-bg: #653;
     --notice2-bg: #ede3e2;
     --notice3-bg: #e7e7e7;
-    --heading: #f7f7f7;
-    --text: #c2c2c2;
+    --heading: #575757;
+    --text: #646464;
     --bold: #d1a394;
     --code: #ddd;
-    --link: rgb(115, 151, 128);
+    --link: rgb(155, 180, 226);
     --link-active: #4ba;
     --blockquote: #777;
     --notice1-accent: #fb0;
@@ -479,14 +479,14 @@ button {
     padding: 4px 20px;
     display: inline-block;
     max-width: 5em;
-    background-color: #eaeaea;
-    color: #c5c5c5;
-    background-image: linear-gradient(to bottom,#6b6b6b,#6b6b6b);
+    background-color: #c9c9c9;
+    color: #878787;
+    background-image: linear-gradient(to bottom,#dadada,#dadada);
     border: 1px solid var(--border);
-    border-color: #6b6b6b #6b6b6b #6b6b6b;
-    border-radius: 4px;
-    outline-offset: -2px;
-    font-size: .9em;
+    border-color: #dadada #dadada #dadada;
+    border-radius: 10px;
+    outline-offset: 0px;
+    font-size: .8em;
     font-family: inherit;
     font-weight: 350;
     line-height: 1;
@@ -499,17 +499,18 @@ button {
 }
 
 button:hover,button:focus,button:active {
-    color: #444444;
-    background-image: linear-gradient(to bottom,#444444,#444444);
+    margin: 0;
     padding: 4px 20px;
     display: inline-block;
     max-width: 5em;
+    background-color: #c9c9c9;
     color: #c5c5c5;
+    background-image: linear-gradient(to bottom,#838383,#838383);
     border: 1px solid var(--border);
-    border-color: #6b6b6b #6b6b6b #6b6b6b;
-    border-radius: 4px;
-    outline-offset: -2px;
-    font-size: .9em;
+    border-color: #838383 #838383 #838383;
+    border-radius: 10px;
+    outline-offset: 0px;
+    font-size: .8em;
     font-family: inherit;
     font-weight: 350;
     line-height: 1;
@@ -517,8 +518,11 @@ button:hover,button:focus,button:active {
     text-decoration: none;
     box-sizing: border-box;
     cursor: pointer;
+    margin-top: 2.3em;
 }
-
+    .btn:active {
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.1)
+    }
 .page {
     margin-top: .5em
 }
