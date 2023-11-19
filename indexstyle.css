@@ -19,19 +19,6 @@
     --font: HelveticaNeue;
     --monospace-font: monospace
     }
-    @media (prefers-color-scheme: light) {
-    :root {
-    --bg:#ddd;
-    --code-bg: #c7c7c7;
-    --notice1-bg: #efebe0;
-    --text: #222;
-    --bold: #6b3d2e;
-    --code: #222;
-    --notice3-accent: #777;
-    --separator: #bbb;
-    --border: #bbb
-    }
-    }
     html,body,div,form,pre,span,tr,th,td,img {
     margin: 0;
     padding: 0;
@@ -485,6 +472,7 @@
     padding-top: 0.2em;
     padding-right: 0em;
     padding-left: 0.4em;
+    margin-top: -6px; 
     }
     .navigation li {
     display: inline-block;
@@ -501,6 +489,7 @@
     left: 3;
     top: -11;
     }
+
     /* Styles for the dropdown menu */
     .submenu {
     display: none;

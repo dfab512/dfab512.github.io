@@ -420,7 +420,7 @@ button {
     text-decoration: none;
     box-sizing: border-box;
     cursor: pointer;
-    margin-top: -42.6px;
+    margin-top: -41.7px;
 }
 button:hover,button:focus,button:active {
     margin: 0;
@@ -465,6 +465,67 @@ button:hover,button:focus,button:active {
     body {
         font-size:.9em 
    }
+   
+   .img1 {
+    float:none;
+    position:absolute;
+    left:-0.2px;
+   }
+
+   .img2 {
+    float:none;
+    position:absolute;
+    top:491px;
+    left:30px;
+   }
+
+   .img3 {
+    float:none;
+    position:absolute;
+    top: 1242px;
+    left: 25.5px;
+   }
+
+   .img4 {
+    float:none;
+    position:absolute;
+    top: 1180px;
+    left: 0px;
+   }
+
+   .img5 {
+    float:none;
+    position:absolute;
+    top: 904px;
+    left: 29px;
+
+   }
+
+   .img6 {
+    float:none;
+    position:absolute;
+    top: 2066px;
+    left: 2px;
+   }
+
+   .img7 {
+    float:none;
+    position:absolute;
+    top: 2540px;
+    left: 26.5px;
+   }
+
+   h5 {
+    top:4.2px;
+    position:relative;
+    left: -10px; 
+   }
+
+    button {
+    top:9px;
+    position: relative;
+   }
+
     h4 {
         font-size: 0.65em;
         left: 190;
@@ -491,14 +552,9 @@ button:hover,button:focus,button:active {
     .content h1,.content h2 {
         font-size: 1.5em 
    }
-
-    
- }
-
+   
 @media print {
     .page {
         border: none!important 
    }
 }
-
-
