@@ -23,14 +23,18 @@
             <div class="sitename-banner"></div>
             <div class="navigation" role="navigation">
                <ul>
-                  <li>
-                     <a>Photography</a>
-                     <ul class="submenu">
-                        <li><a href="cameras.html">Cameras</a></li>
-                        <li><a href="photos.html">Photos</a></li>
-                     </ul>
-                  </li>
+                   <li>
+                       <a href="blog.html" class="blog">Blog</a>
+                   </li>
+                   <li>
+                       <a href="#">Photography</a>
+                       <ul class="submenu">
+                           <li><a href="cameras.html">Cameras</a></li>
+                           <li><a href="photos2.html">Photos</a></li>
+                       </ul>
+                   </li>
                </ul>
+           </div>
                <script>
                  document.addEventListener('DOMContentLoaded', function() {
                      const menuItems = document.querySelectorAll('.navigation li a'); // Target the <a> elements within the list items
@@ -62,8 +66,8 @@
                </script>
             </div>
             <audio id="player" src="\docs\assets\09 - Kuricorder Pop Orchestra - なんだか.mp3"></audio>
-            <p>Song of the Week / Kuricorder Pop Orchestra - なんだか</p>
-            <div> 
+            <p class="song">Song of the Week / Kuricorder Pop Orchestra - なんだか</p>
+            <div class="song"> 
                <button onclick="document.getElementById('player').play()">Play</button> 
                <button onclick="document.getElementById('player').pause()">Pause</button> 
                <button onclick="document.getElementById('player').volume += 0.1">+ </button> 
@@ -74,7 +78,7 @@
          <div class="content">
             <img src="docs\assets\banner.png">
             <div class="main" role="main">
-               <h1>Fabian Diaz</h1>
+               <h1 class="name"><a href="contact.html">Fabian Diaz</h1>
                <ul class="toc">
                   <h4>My Links</h4>
                   <li class="toc2"><a href="https://www.instagram.com/dfab512/">Instagram</a></li>
