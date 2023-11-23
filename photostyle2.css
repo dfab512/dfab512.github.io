@@ -515,6 +515,13 @@ button:hover,button:focus,button:active {
     left: 26.5px;
    }
 
+   .img8 {
+    float:none;
+    position:absolute;
+    top: 1066px;
+    left: 2px;
+   }
+
    h5 {
     top:4.2px;
     position:relative;
