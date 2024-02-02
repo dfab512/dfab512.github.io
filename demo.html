@@ -1,0 +1,68 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Trading and Betting Made Easy</title>
+      <link rel="shortcut icon" type="image/x-icon" href="\dfab512.github.io\docs\assets\probablelogowhite.png">
+      <link rel="stylesheet" href="demo.css">
+      <meta property="og:image" content="\docs\assets\probablelogowhite.png">
+      <meta property="og:image:alt" content="Fabian Diaz">
+      <head>
+   </head>
+   <body>
+      <div class="page layout-default">
+         <div class="header" role="banner">
+            <div class="sitename">
+               <h2><img class="sitename-logo" src="\dfab512.github.io\docs\assets\probablelogoblack.png" loading="lazy"><a href="probableAI.html">ProbableAI</a></h2>
+            </div>
+            <div class="content">
+               <button style="float:right;" onclick="window.location.href='probableAI.html';">
+               Back
+               </button>
+               <h2>Demo</h2>
+               <hr>
+            <div class="sitename-banner"></div>
+            <img src="\dfab512.github.io\docs\assets\homescreen.png" align="right"> 
+      <p><b>ProbableAI Mobile</b></p>
+      <p>The power of investing like Warren Buffet, in a small, compact, and simple 
+         form. Make money on the go with the same powerful algorithms as the desktop app. ProbableAI does all the work so you can be at ease when trading. The early version of our app can be downloaded after subscribing to our 
+         monthly plan! 
+         <br>
+         <h5>App Scheme By Victor V. </h5>
+      </p>
+      <hr>
+      <br>
+      <p><b>Try it out</b></p>
+      <body>
+         <!-- Your existing HTML content -->
+     
+         <div class="investment-section">
+             <div class="investment-item">
+                 <h3>Apple</h3>
+                 <p>Stock Price: at least $1</p>
+                 <button class="buy-button" onclick="buyStock('Company ABC')">Calculate Probability</button>
+                 <div id="typingEffect"></div>
+             </div>
+         <script>
+             function buyStock(company) {
+                 // Clear previous typing effect
+                 document.getElementById('typingEffect').innerHTML = '';
+     
+                 // Create a typing effect
+                 const text = `Uhhhh like the fruit?? I guess that's a pretty stable market.. buy a ton!`;
+                 let index = 0;
+     
+                 function type() {
+                     document.getElementById('typingEffect').innerHTML += text.charAt(index);
+                     index++;
+     
+                     if (index < text.length) {
+                         setTimeout(type, 50); // Adjust the typing speed (milliseconds)
+                     }
+                 }
+     
+                 type();
+             }
+         </script>
+     </body>
+     

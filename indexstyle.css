@@ -1,20 +1,20 @@
 :root {
-    --bg: #F5F5F7;
+    --bg: #2b2b2b;
     --code-bg: #111;
     --notice1-bg: #653;
     --notice2-bg: #ede3e2;
-    --notice3-bg: #e7e7e7;
-    --heading: #575757;
-    --text: #646464;
+    --notice3-bg: #696969;
+    --heading: #cacaca;
+    --text: #a0a0a0;
     --bold: #d1a394;
     --code: #ddd;
-    --link: rgb(155, 180, 226);
+    --link: #b1b1b1;
     --link-active: #4ba;
     --blockquote: #777;
     --notice1-accent: #fb0;
     --notice2-accent: #d32;
     --notice3-accent: #aaa;
-    --separator: #555;
+    --separator: #3b3b3b;
     --border: #555;
     --font: HelveticaNeue;
     --monospace-font: monospace
@@ -385,11 +385,11 @@
     padding: 2.5px 0px;
     display: inline-block;
     min-width: 4em;
-    background-color: #c9c9c9;
-    color: #878787;
-    background-image: linear-gradient(to bottom,#dadada,#dadada);
+    background-color: #e7e7e7;
+    color: #c4c4c4;
+    background-image: linear-gradient(to bottom,#777777,#777777);
     border: 1px solid var(--border);
-    border-color: #dadada #dadada #dadada;
+    border-color: #777777 #777777 #777777;
     border-radius: 10px;
     outline-offset: 0px;
     font-size: .8em;
