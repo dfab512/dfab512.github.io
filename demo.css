@@ -502,7 +502,7 @@
     padding: 0
     }
     .header .sitename h2 {
-    margin-top: -.5em
+    margin-top: 5px
     }
     .header .sitename-logo {
     width: 32px;
@@ -534,13 +534,53 @@
         margin-block: 0em;
         margin-right: 5em;
     }
-    
+
+    .investment-item {
+        border: 34px;
+        padding: 54px;
+        margin-bottom: 164px;
+        margin-top: -104px;
+        margin-left: -40px;
+        position:absolute;
+    }
+
     .navigation a {
     text-decoration: none;
     color: #c2c2c2;
     position: relative;
     left: 3;
     top: -11;
+    }
+
+    hr {
+        height: 1px;
+        width: 306px;
+        background: #c1c1c1;
+        border: 0;
+        margin-block: 2e;
+        float: left;
+    }
+
+    .buy-button {
+        padding: 2.5px 0px;
+        display: inline-block;
+        min-width: 11em;
+        background-color: #F1C232;
+        color: #646464;
+        border: 1px solid var(--border);
+        border-color: #F1C232;
+        border-radius: 10px;
+        outline-offset: 0px;
+        font-size: .8em;
+        font-family: inherit;
+        font-weight: 350;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        box-sizing: border-box;
+        position: relative;
+        top: -87px;
+        right: -88px;
     }
 
     /* Styles for the dropdown menu */

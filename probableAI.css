@@ -470,7 +470,7 @@
     padding: 0
     }
     .header .sitename h2 {
-    margin-top: -.5em
+    margin-top: 5px
     }
     .header .sitename-logo {
     width: 32px;
@@ -498,6 +498,21 @@
     padding-left: 0.4em;
     display: inline;
     padding: 0 .3em
+    }
+
+    .content p {
+        margin-block: 1em;
+        margin-right: 6em;
+    }
+
+    hr {
+        height: 1px;
+        min-width: 299px;
+        background: #c1c1c1;
+        border: 0;
+        margin-block: 2em;
+        top: 36px;
+        position: static;
     }
 
     .navigation li a.active {
