@@ -3,16 +3,16 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>ProbableAI - Home</title>
-      <link rel="icon" href="\docs\assets\probablelogowhite.png">
+      <link rel="icon" href="/docs/assets/probablelogowhite.png">
       <link rel="stylesheet" href="probableAI.css">
-      <meta property="og:image" content="\docs\assets\probablelogowhite.png">
+      <meta property="og:image" content="/docs/assets/probablelogowhite.png">
       <head>
    </head>
    <body>
       <div class="page layout-default">
          <div class="header" role="banner">
             <div class="sitename">
-               <h2><img class="sitename-logo" src="\docs\assets\probablelogoblack.png" loading="lazy"><a href="">ProbableAI</a></h2>
+               <h2><img class="sitename-logo" src="/docs/assets/probablelogoblack.png" loading="lazy"><a href="">ProbableAI</a></h2>
             </div>
             <div class="sitename-banner"></div>
             <div class="navigation" role="navigation">
@@ -58,7 +58,7 @@
             <div class="navigation-banner"></div>
          </div>
          <div class="content">
-            <img src="\docs\assets\probablebanner.png">
+            <img src="/docs/assets/probablebanner.png">
             <div class="main" role="main">
                <h1 class="name">The Future of Investing</h1>
                </ul>
@@ -71,6 +71,35 @@
                </p>
                <hr>
             </div>
+            <script>
+               document.addEventListener('DOMContentLoaded', function() {
+                   const menuItems = document.querySelectorAll('.navigation li a'); // Target the <a> elements within the list items
+                   const submenus = document.querySelectorAll('.navigation .submenu'); // Target the submenus
+
+                   menuItems.forEach(item => {
+                      item.addEventListener('click', function(event) {
+                         if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768 pixels (you can adjust this value)
+                            const submenu = this.nextElementSibling; // Use nextElementSibling to select the submenu
+
+                            if (submenu) {
+                               event.preventDefault(); // Prevent the default link behavior on mobile devices
+                                  submenu.classList.toggle('show-submenu'); // Toggle the submenu
+                         } 
+                      }
+                 });
+             });
+
+             // Add event listeners to the submenus to allow clicking on them
+             submenus.forEach(submenu => {
+                submenu.addEventListener('click', function(event) {
+                   if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768 pixels (you can adjust this value)
+                      event.stopPropagation(); // Prevent the submenu click event from propagating to the top-level menu item
+                }
+             });
+          });
+       });
+
+             </script>
          </div>
          <div class="footer" role="contentinfo">
             <div class="siteinfo-banner"></div>

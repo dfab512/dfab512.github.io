@@ -486,7 +486,8 @@
     padding-top: 0.2em;
     padding-right: 0em;
     padding-left: 0.4em;
-    margin-top: -6px; 
+    margin-top: 42px; 
+    margin-bottom:-70px;
     }
     .navigation li {
     display: inline-block;
@@ -495,7 +496,14 @@
     padding-top: 0.2em;
     padding-right: 0em;
     padding-left: 0.4em;
+    display: inline;
+    padding: 0 .3em
     }
+
+    .navigation li a.active {
+        border-bottom: solid 2px var(--link-active)
+        }
+
     .navigation a {
     text-decoration: none;
     color: #c2c2c2;

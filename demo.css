@@ -520,6 +520,7 @@
     padding-left: 0.4em;
     margin-top: -6px; 
     }
+    
     .navigation li {
     display: inline-block;
     margin-right: 15px;
@@ -528,6 +529,12 @@
     padding-right: 0em;
     padding-left: 0.4em;
     }
+
+    .content p {
+        margin-block: 0em;
+        margin-right: 5em;
+    }
+    
     .navigation a {
     text-decoration: none;
     color: #c2c2c2;
