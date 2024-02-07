@@ -1,36 +1,23 @@
 :root {
-  --bg: #F5F5F7;
+  --bg: #2b2b2b;
   --code-bg: #111;
   --notice1-bg: #653;
   --notice2-bg: #ede3e2;
-  --notice3-bg: #e7e7e7;
-  --heading: #575757;
-  --text: #646464;
+  --notice3-bg: #696969;
+  --heading: #cacaca;
+  --text: #a0a0a0;
   --bold: #d1a394;
   --code: #ddd;
-  --link: rgb(155, 180, 226);
+  --link: #b1b1b1;
   --link-active: #4ba;
   --blockquote: #777;
   --notice1-accent: #fb0;
   --notice2-accent: #d32;
   --notice3-accent: #aaa;
-  --separator: #555;
+  --separator: #3b3b3b;
   --border: #555;
   --font: HelveticaNeue;
   --monospace-font: monospace
-  }
-  @media (prefers-color-scheme: light) {
-  :root {
-  --bg:#ddd;
-  --code-bg: #c7c7c7;
-  --notice1-bg: #efebe0;
-  --text: #222;
-  --bold: #6b3d2e;
-  --code: #222;
-  --notice3-accent: #777;
-  --separator: #bbb;
-  --border: #bbb
-  }
   }
   html,body,div,form,pre,span,tr,th,td,img {
   margin: 0;
@@ -46,12 +33,21 @@
   font-weight: 300;
   line-height: 1.6
   }
-  h1,h2,h3,h4,h5,h6 {
+  h2,h3,h4,h5,h6 {
   color: var(--heading);
   font-weight: 350
   }
   h1 {
-  font-size: 2em; margin-block-start:0em;margin-block-end:0em}
+  color: rgb(99 126 110);
+  font-size: 2em;
+  font-weight:350;
+  margin-block-start:0em;
+  margin-block-end:0em;
+  top: 4;
+  position: relative;
+  text-align: center;
+  left: 29px;
+  }
   h2 {
   font-size: 1.4em; margin-block-start:1em;margin-block-end:0em
   }
@@ -59,24 +55,20 @@
   font-size: 1.4em
   }
   h4 {
-  font-size: 1em;
-  margin-block-start: 0.8em;
-  margin-block-end: 0em;
-  left: 540;
-  position: absolute;
-
-  } 
+  font-size: 1.02em;
+  margin-block-start:-10px;
+  margin-block-end:.3em;
+  margin-right: 29px;
+  }
   h5 {
   font-size: 0.7em;
-  margin-block-start:0em;margin-block-end:1em; opacity:0.6;
-  width:60px}
-
+  margin-block-start:0em;margin-block-end:1em; opacity:0.6;}
   hr {
   height: 1px;
   min-width: 100px;
-  background: var(--separator);
+  background: #c1c1c1;
   border: 0;
-  margin-block:0.5em}
+  margin-block:2em}
   strong {
   font-weight: 700;
   color: var(--bold)
@@ -84,81 +76,11 @@
   code {
   font-size: 1.1em
   }
-  * {box-sizing:border-box}
-  /* Slideshow container */
-  .slideshow-container {
-  max-width: 1000px;
-  position: static;
-  margin: auto;
-  }
-  /* Hide the images by default */
-  .mySlides1, .myslides2 {
-  display: none;
-  }
-  /* Next & previous buttons */
-  .prev, .next {
-  cursor: pointer;
-  position: static;
-  top: -6.4%;
-  width: 0.1;
-  margin-top: -22px;
-  padding: 6px;
-  color: #575757;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 6px 6px 6px 6px;
-  user-select: none;
-  right:30;
-  }
-  /* Position the "next button" to the right */
-  .next {
-  right: 0;
-  border-radius: 6px 6px 6px 6px;
-  }
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-  background-color: #6b6b6b;
-  }
-  /* Caption text */
-  .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  }
-  /* Number text (1/3 etc) */
-  .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  }
-  /* The dots/bullets/indicators */
-  .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  }
-  .active, .dot:hover {
-  background-color: #717171;
-  }
-  /* Fading animation */
-  .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-  }
-  @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  audio {
+  width:300px;
+  height: 32px;
+  position:fixed;
+  top:81.5px
   }
   a {
   color: var(--link);
@@ -168,18 +90,32 @@
   color: var(--link);
   text-decoration: underline
   }
+
+  .blog {
+      color: var(--text);
+      text-decoration: none;
+      padding: 2;
+      position: relative;
+      top: -10.9;  
+  }
+
+  .blog:hover {
+  border-bottom: solid 2px var(--link)    
+  }
   .content {
   font-size: 1.11em;
   margin-block:1em}
   .content h1 a {
-  color: var(--heading)
+  color: var(--link)
   }
   .content h1 a:hover {
   color: var(--heading);
   text-decoration: none
   }
   .content p {
-  margin-block:1em}
+  margin-block:1em;
+  margin-right: 0em;
+  }
   .content img {
   max-width: 100%;
   height: auto
@@ -334,16 +270,7 @@
   .content .portret+h2+h3+ul {
   max-width: calc(100vw - 400px)
   }
-  @media screen and (min-width: 72em) { 
-  
-  h4 {
-    font-size: 1em;
-    margin-block-start: 0.8em;
-    margin-block-end: 0em;
-    left: 540;
-    position: absolute;
-  }
-
+  @media screen and (min-width: 72em) {
   .content .portret+h2+h3+ul {
   max-width:calc(400px + 30vw)
   }
@@ -375,7 +302,9 @@
   .navigation a {
   color: var(--text);
   text-decoration: none;
-  padding: 0
+  padding: 2;
+  position: relative;
+  top: -10.9;
   }
   .navigation a:hover {
   border-bottom: solid 2px var(--link)
@@ -399,15 +328,18 @@
   margin: 0
   }
   .navigation ul li ul {
-  padding: .3em;
+  padding-top: 1.1em;
+  padding-right: 0em;
+  padding-left: 0.4em;
   position: absolute;
-  width: 12em;
+  width: 82.6px;
   background: var(--bg);
   z-index: 100;
   display: none;
-  border: 1px solid var(--border);
+  border: 1px solid #f1f1f1;
   border-radius: 4px;
-  box-shadow: 2px 4px 10px rgba(0,0,0,.2)
+  box-shadow: 2px 4px 10px rgba(0,0,0,.2);
+  top: 35;
   }
   .navigation ul li ul li {
   display: block
@@ -437,7 +369,7 @@
   }
   .form-control {
   margin: 0;
-  padding: 1px 4px;
+  padding: 2px 4px;
   display: inline-block;
   min-width: 7em;
   background-color: var(--bg);
@@ -451,54 +383,50 @@
   line-height: normal
   }
   button {
-    margin: 0;
-    padding: 4px 20px;
-    display: inline-block;
-    max-width: 5em;
-    background-color: #c9c9c9;
-    color: #878787;
-    background-image: linear-gradient(to bottom,#dadada,#dadada);
-    border: 1px solid var(--border);
-    border-color: #dadada #dadada #dadada;
-    border-radius: 10px;
-    outline-offset: 0px;
-    font-size: .8em;
-    font-family: inherit;
-    font-weight: 350;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 2.3em;
-    
-}
-
-button:hover,button:focus,button:active {
-    margin: 0;
-    padding: 4px 20px;
-    display: inline-block;
-    max-width: 5em;
-    background-color: #c9c9c9;
-    color: #c5c5c5;
-    background-image: linear-gradient(to bottom,#838383,#838383);
-    border: 1px solid var(--border);
-    border-color: #838383 #838383 #838383;
-    border-radius: 10px;
-    outline-offset: 0px;
-    font-size: .8em;
-    font-family: inherit;
-    font-weight: 350;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 2.3em;
-}
-    .btn:active {
-    box-shadow: inset 0 2px 4px rgba(0,0,0,.1)
-    }
+  margin: 0;
+  padding: 2.5px 0px;
+  display: inline-block;
+  min-width: 4em;
+  background-color: #e7e7e7;
+  color: #c4c4c4;
+  background-image: linear-gradient(to bottom,#777777,#777777);
+  border: 1px solid var(--border);
+  border-color: #777777 #777777 #777777;
+  border-radius: 6px;
+  outline-offset: 0px;
+  font-size: .8em;
+  font-family: inherit;
+  font-weight: 350;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  position: relative;
+  top: -31.5px;
+  }
+  button:hover,button:focus,button:active {
+  color: #444444;
+  background-image: linear-gradient(to bottom,#838383,#838383);
+  padding: 2.5px 0px;
+  display: inline-block;
+  max-width: 4em;
+  color: #c5c5c5;
+  border: 1px solid var(--border);
+  border-color: #838383 #838383 #838383;
+  border-radius: 10px;
+  outline-offset: 0px;
+  font-size: .8em;
+  font-family: inherit;
+  font-weight: 350;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  }
+  .btn:active {
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.1)
+  }
   .page {
   margin-top: .5em
   }
@@ -512,18 +440,18 @@ button:hover,button:focus,button:active {
   padding: .7em 1em;
   max-width: 1000px
   }
+
+  .song {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1000px;
+  font-size: 0.9em;
+  margin-block:0.6em
+  }
+
   @media screen and (max-width: 32em) {
   body {
   font-size:.9em
-  }
-
-  h4 {
-    font-size: 0.65em;
-    left: 190;
-    top: 8;
-    margin-block-start: 0.8em;
-    margin-block-end: 0em;
-    position: absolute;
   }
   .header .sitename h1 {
   margin: 0;
@@ -540,9 +468,49 @@ button:hover,button:focus,button:active {
   margin-top: .5em;
   margin-bottom: .5em
   }
+  .navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 0.2em;
+  padding-right: 0em;
+  padding-left: 0.4em;
+  margin-top: -6px; 
+  }
+  .navigation li {
+  display: inline-block;
+  margin-right: 15px;
+  position: relative; 
+  padding-top: 0.2em;
+  padding-right: 0em;
+  padding-left: 0.4em;
+  }
+  .navigation a {
+  text-decoration: none;
+  color: #c2c2c2;
+  position: relative;
+  left: 3;
+  top: -11;
+  }
+
+  /* Styles for the dropdown menu */
+  .submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  }
+  .submenu li {
+  display: block;
+  }
+  /* Show the submenu when the parent menu item is clicked */
+  .show-submenu .submenu {
+  display: block;
+  }
   .content h1,.content h2 {
   font-size: 1.5em
   }
+
   }
   @media print {
   .page {

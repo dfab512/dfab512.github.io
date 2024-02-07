@@ -1,156 +1,227 @@
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>The Gallery - Fabian Diaz</title>
-      <link rel="shortcut icon" type="image/x-icon" href="\docs\assets\icon.png">
-      <link rel="stylesheet" href="photostyle.css">
-      <meta name="links" content="Instagram Twitter Twitch">
-      <meta property="og:type" content="website">
-      <meta property="og:title" content="The Gallery">
-      <meta property="og:site_name" content="Fabian Diaz">
-      <meta property="og:image" content="\docs\assets\icon.png">
-      <meta property="og:image:alt" content="Fabian Diaz">
-   </head>
-   <body>
-      <div class="page layout-default">
-         <div class="header" role="banner">
-            <div class="sitename">
-               <h2><img class="sitename-logo" src="\docs\assets\icon.png" loading="lazy"><a href="https://dfab512.github.io/">@dfab512</a></h2>
-            </div>
-            <div class="sitename-banner"></div>
-            <div class="navigation" role="navigation">
-               <ul>
-               </ul>
-            </div>
-            <div class="navigation-banner"></div>
-         </div>
-         <div class="content">
-            <button style="float:right;" onclick="window.location.href='//dfab512.github.io/';">
-            Back
-            </button>
-            <div class="main" role="main">
-               <ul class="toc">
-               </ul>
-               <h1>The Gallery</h1>
-               <h5>My Photos</h5>
-               <hr>
-            </div>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-               * {box-sizing: border-box}
-               .mySlides1, .mySlides2 {display: none}
-               img {vertical-align: middle;}
-               /* Slideshow container */
-               .slideshow-container {
-               max-width: 1000px;
-               position: relative;
-               margin: auto;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               }
-               /* Next & previous buttons */
-               .prev, .next {
-               cursor: pointer;
-               position: absolute;
-               top: -6.4%;
-               width: auto;
-               padding: 6px;
-               margin-top: -22px;
-               color: #575757;
-               font-weight: bold;
-               font-size: 18px;
-               transition: 0.6s ease;
-               border-radius: 6px 6px 6px 6px;
-               user-select: none;
-               }
-               /* Position the "next button" to the right */
-               .next {
-               right: 0;
-               border-radius: 6px 6px 6px 6px;
-               }
-               /* On hover, add a grey background color */
-               .prev:hover, .next:hover {
-               color: #ffffff;
-               }
-            </style>
-            </head>
-            <body>
-               <p>On Black & White:</p>
-               <div class="slideshow-container">
-                  <h4>Greyscale photography was something I generally avoided because it required composition skills that I hadn't yet pinned down. 
-                     Though these are not the best either, I'm glad I could push myself out of my comfort zone and try something new.
-                  </h4>
-                  <div class="mySlides1" style="display: flex;">
-                     <img src="\docs\assets\IMG_0647_2.png" style="width:50%">
-                  </div>
-                  <div class="mySlides1">
-                     <img src="\docs\assets\IMG_0662_2.png" style="width:50%">
-                  </div>
-                  <div class="mySlides1">
-                     <img src="\docs\assets\IMG_0665_2.png" style="width:50%">
-                  </div>
-                  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-               </div>
-               <p>Of Flowers:</p>
-               <div class="slideshow-container">
-                  <h4>Flowers have been a pretty big part of my photography journey. I like plants!</h4>
-                  <div class="mySlides2">
-                     <img src="\docs\assets\IMG_0687.png" style="width:50%">
-                  </div>
-                  <div class="mySlides2">
-                     <img src="\docs\assets\IMG_06341.png" style="width:50%">
-                  </div>
-                  <div class="mySlides2">
-                     <img src="\docs\assets\IMG_06361.png" style="width:50%">
-                  </div>
-                  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-               </div>
-               <p>Of Everything Else:</p>
-               <div class="slideshow-container">
-                  <h4>everything else everything else everything else everything else everything else everything else everything else everything else everything else everything else everything else everything else everything else </h4>
-                  <div class="mySlides3">
-                     <img src="\docs\assets\IMG_2585.jpg" style="width:50%">
-                  </div>
-                  <div class="mySlides3">
-                     <img src="\docs\assets\IMG_6969.png" style="width:50%">
-                  </div>
-                  <div class="mySlides3">
-                     <img src="\docs\assets\DSC_3302_2.png" style="width:50%">
-                  </div>
-                  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-               </div>
-               <script>
-                  let slideIndex = [1, 1, 1]; // Added a new index for the third slideshow
-                  let slideId = ["mySlides1", "mySlides2", "mySlides3"]; // Added "mySlides3" for the third slideshow
-                  showSlides(1, 0);
-                  showSlides(1, 1);
-                  showSlides(1, 2); // Show the first slide of the third slideshow
-                  
-                  function plusSlides(n, no) {
-                  showSlides(slideIndex[no] += n, no);
-                  }
-                  
-                  function showSlides(n, no) {
-                  let i;
-                  let x = document.getElementsByClassName(slideId[no]);
-                  if (n > x.length) {
-                  slideIndex[no] = 1;
-                  }
-                  if (n < 1) {
-                  slideIndex[no] = x.length;
-                  }
-                  for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                  }
-                  x[slideIndex[no] - 1].style.display = "block";
-                  }
-               </script>
-         </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - Fabian Diaz</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/docs/assets/icon.png">
+    <link rel="stylesheet" href="photostyle.css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Website">
+    <meta property="og:site_name" content="Fabian Diaz">
+    <meta property="og:links" content="Instagram Twitter YouTube">
+    <meta property="og:image" content="\docs\assets\icon.png">
+    <meta property="og:image:alt" content="Fabian Diaz">
+    <head>
+ </head>
+ <body>
+  <div class="page layout-default">
+     <div class="header" role="banner">
+        <div class="sitename">
+           <h2><img class="sitename-logo" src="\docs\assets\icon.png" loading="lazy"><a href="https://dfab512.github.io/">@dfab512</a></h2>
+        </div>
+        <div class="sitename-banner"></div>
+    </div>
+    <div class="content">
+            
+      <button style="float:right;" onclick="window.location.href='//dfab512.github.io/';">
+          Back
+      </button><div class="main" role="main">
+  <style>
+
+  .description {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 20px;
+      float:center;
+    }
+
+    .gallery {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .photo {
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+      cursor: pointer;
+    }
+    .photo img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    .photo p {
+      margin-top: 5px;
+    }
+    .zoom-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .zoom-overlay img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    @media screen and (max-width: 32em) {
+
+    .photo img {
+    max-width: 167px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="description">
+    <h1>Gallery</h1>
+    <p>I have never really been great at committing to any hobbies, but I think photography is an exception. In contrast to my other past times, 
+      photography has me thinking thinking almost all the time I'm outside.
+       For me, it is very easy to get engaged in photography and I believe that's part of why I've continued taking photos for so long.</p>
+  </div>
+  <div class="gallery">
+    <div class="section">
+      <h2>black and white</h2>
+      <div class="photo">
+        <img src="/dfab512.github.io/docs/assets/IMG_0870[1].png" alt="Black and White Photo 1">
+        <p>35mm</p>
       </div>
-   </body>
+      <div class="photo">
+        <img src="/dfab512.github.io/docs/assets/PC170538.jpg" alt="Black and White Photo 2">
+        <p>28mm</p>
+      </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC281137.png" alt="Black and White Photo 4">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC281059.png" alt="Black and White Photo 5">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC281149.png" alt="Black and White Photo 7">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC030275.png" alt="Black and White Photo 8">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/P1280118.png" alt="Black and White Photo 9">
+         <p>→</p>
+       </div>
+      <!-- Add 7 more photos here with their descriptions -->
+    </div>
+
+    <div class="section">
+      <h2>urban scenery</h2>
+      <div class="photo">
+        <img src="/dfab512.github.io/docs/assets/P12013772.png" alt="Photo 1">
+        <p>28mm</p>
+      </div>
+      <div class="photo">
+        <img src="/dfab512.github.io/docs/assets/P1210026.png" alt="Photo 2">
+        <p>→</p>
+      </div>
+      <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC281133.png" alt="Photo 3">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC311257.png" alt="Photo 4">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC311244.png" alt="Photo 5">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC281156.png" alt="Photo 6">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/PC281064.png" alt="Photo 7">
+         <p>→</p>
+       </div>
+       <div class="photo">
+         <img src="/dfab512.github.io/docs/assets/IMG_0899.png" alt="Photo 8">
+         <p>35 mm</p>
+       </div>
+      <!-- Add 7 more photos here with their descriptions -->
+      <div class="section">
+         <h2>nature</h2>
+         <div class="photo">
+           <img src="/dfab512.github.io/docs/assets/P2040082.png" alt="Black and White Photo 1">
+           <p>50mm</p>
+         </div>
+         <div class="photo">
+           <img src="/dfab512.github.io/docs/assets/P1280107.png" alt="Black and White Photo 2">
+           <p>→</p>
+         </div>
+          <div class="photo">
+            <img src="/dfab512.github.io/docs/assets/P2040091.png" alt="Black and White Photo 4">
+            <p>→</p>
+          </div>
+          <div class="photo">
+            <img src="/dfab512.github.io\docs\assets\P2040083.png" alt="Black and White Photo 5">
+            <p>→</p>
+          </div>
+          <div class="photo">
+            <img src="/dfab512.github.io/docs/assets/P2040090.png" alt="Black and White Photo 7">
+            <p>→</p>
+          </div>
+          <div class="photo">
+            <img src="/dfab512.github.io/docs/assets/P2030041.png" alt="Black and White Photo 8">
+            <p>→</p>
+          </div>
+         <!-- Add 7 more photos here with their descriptions -->
+       </div>
+    </div>
+  </div>
+
+  <div class="zoom-overlay" id="zoomOverlay">
+    <img id="zoomedImage" src="" alt="Zoomed Photo">
+  </div>
+
+  <script>
+    const photos = document.querySelectorAll('.photo img');
+    const zoomOverlay = document.getElementById('zoomOverlay');
+    const zoomedImage = document.getElementById('zoomedImage');
+
+    photos.forEach(photo => {
+      photo.addEventListener('click', () => {
+        const imgSrc = photo.getAttribute('src');
+        zoomedImage.setAttribute('src', imgSrc);
+        zoomOverlay.style.display = 'flex';
+      });
+    });
+
+    zoomOverlay.addEventListener('click', () => {
+      zoomOverlay.style.display = 'none';
+    });
+  </script>
+</body>
 </html>
