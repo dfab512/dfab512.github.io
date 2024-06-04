@@ -1,5 +1,5 @@
 :root {
-  --bg: #2b2b2b;
+  --bg: #141414;
   --code-bg: #111;
   --notice1-bg: #653;
   --notice2-bg: #ede3e2;
@@ -16,7 +16,7 @@
   --notice3-accent: #aaa;
   --separator: #3b3b3b;
   --border: #555;
-  --font: HelveticaNeue;
+  --font: times;
   --monospace-font: monospace
   }
   html,body,div,form,pre,span,tr,th,td,img {
@@ -25,6 +25,11 @@
   border: 0;
   vertical-align: baseline
   }
+
+  p { 
+    display:inline-block;
+  }
+
   body {
   background-color: var(--bg);
   color: var(--text);
@@ -38,15 +43,13 @@
   font-weight: 350
   }
   h1 {
-  color: rgb(99 126 110);
+  color: rgb(169, 185, 255);
   font-size: 2em;
   font-weight:350;
   margin-block-start:0em;
   margin-block-end:0em;
-  top: 4;
+  top: 4; 
   position: relative;
-  text-align: center;
-  left: 29px;
   }
   h2 {
   font-size: 1.4em; margin-block-start:1em;margin-block-end:0em
@@ -66,9 +69,9 @@
   hr {
   height: 1px;
   min-width: 100px;
-  background: #c1c1c1;
+  background: #373737;
   border: 0;
-  margin-block:2em}
+  margin-block:1em}
   strong {
   font-weight: 700;
   color: var(--bold)
@@ -114,11 +117,12 @@
   }
   .content p {
   margin-block:1em;
-  margin-right: 0em;
+  margin-right: 9em;
   }
   .content img {
   max-width: 100%;
-  height: auto
+  height: auto;
+  filter: grayscale(100%);
   }
   .content form {
   margin: 1em 0
@@ -336,7 +340,7 @@
   background: var(--bg);
   z-index: 100;
   display: none;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #272727;
   border-radius: 4px;
   box-shadow: 2px 4px 10px rgba(0,0,0,.2);
   top: 35;
@@ -387,12 +391,12 @@
   padding: 2.5px 0px;
   display: inline-block;
   min-width: 4em;
-  background-color: #e7e7e7;
+  background-color: #373737;
   color: #c4c4c4;
-  background-image: linear-gradient(to bottom,#777777,#777777);
+  background-image: #373737;
   border: 1px solid var(--border);
-  border-color: #777777 #777777 #777777;
-  border-radius: 6px;
+  border-color: #373737;
+  border-radius: 10px;
   outline-offset: 0px;
   font-size: .8em;
   font-family: inherit;
@@ -402,7 +406,7 @@
   text-decoration: none;
   box-sizing: border-box;
   position: relative;
-  top: -31.5px;
+  top: -58;
   }
   button:hover,button:focus,button:active {
   color: #444444;
@@ -509,6 +513,13 @@
   }
   .content h1,.content h2 {
   font-size: 1.5em
+  }
+
+  img {
+    margin: 13;
+    padding: 5.5;
+    border: 0;
+    vertical-align: baseline;
   }
 
   }

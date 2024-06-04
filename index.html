@@ -2,14 +2,14 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Gallery - Fabian Diaz</title>
-      <link rel="shortcut icon" type="image/x-icon" href="/docs/assets/icon.png">
+      <title>F. Diaz - Artsy Stuff</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/docs/assets/icon.webp">
       <link rel="stylesheet" href="indexstyle.css">
       <meta property="og:type" content="website">
       <meta property="og:title" content="The Website">
       <meta property="og:site_name" content="Fabian Diaz">
       <meta property="og:links" content="Instagram Twitter YouTube">
-      <meta property="og:image" content="/docs/assets/icon.png">
+      <meta property="og:image" content="/docs/assets/icon.webp">
       <meta property="og:image:alt" content="Fabian Diaz">
       <head>
    </head>
@@ -17,7 +17,7 @@
       <div class="page layout-default">
          <div class="header" role="banner">
             <div class="sitename">
-               <h2><img class="sitename-logo" src="/docs/assets/icon.png" loading="lazy"><a href="https://dfab512.github.io/">@dfab512</a></h2>
+               <h2><img class="sitename-logo" src="/docs/assets/icon.webp" loading="lazy"><a href="https://dfab512.github.io/">@dfab512</a></h2> 
             </div>
             <div class="sitename-banner"></div>
             <div class="navigation" role="navigation">
@@ -36,27 +36,27 @@
            </div>
                <script>
                  document.addEventListener('DOMContentLoaded', function() {
-                     const menuItems = document.querySelectorAll('.navigation li a'); // Target the <a> elements within the list items
-                     const submenus = document.querySelectorAll('.navigation .submenu'); // Target the submenus
+                     const menuItems = document.querySelectorAll('.navigation li a');
+                     const submenus = document.querySelectorAll('.navigation .submenu');
 
                      menuItems.forEach(item => {
                         item.addEventListener('click', function(event) {
-                           if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768 pixels (you can adjust this value)
-                              const submenu = this.nextElementSibling; // Use nextElementSibling to select the submenu
+                           if (window.innerWidth <= 768) {
+                              const submenu = this.nextElementSibling;
 
                               if (submenu) {
-                                 event.preventDefault(); // Prevent the default link behavior on mobile devices
-                                    submenu.classList.toggle('show-submenu'); // Toggle the submenu
+                                 event.preventDefault();
+                                    submenu.classList.toggle('show-submenu');
                            } 
                         }
                    });
                });
 
-               // Add event listeners to the submenus to allow clicking on them
+
                submenus.forEach(submenu => {
                   submenu.addEventListener('click', function(event) {
-                     if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768 pixels (you can adjust this value)
-                        event.stopPropagation(); // Prevent the submenu click event from propagating to the top-level menu item
+                     if (window.innerWidth <= 768) {
+                        event.stopPropagation();
                   }
                });
             });
@@ -64,8 +64,8 @@
 
                </script>
             </div>
-            <audio id="player" src="\docs\assets\20191009.mp3"></audio>
-            <p class="song">Song of the Week / Mac Demarco - 20191009 I Like Her</p>
+            <audio id="player" src="\docs\assets\noonenoticed.mp3"></audio>
+            <p class="song">Song of the Weep / The Marías - No One Noticed</p>
             <div class="song"> 
                <button onclick="document.getElementById('player').play()">Play</button> 
                <button onclick="document.getElementById('player').pause()">Pause</button> 
@@ -75,7 +75,7 @@
             <div class="navigation-banner"></div>
          </div>
          <div class="content">
-            <img src="docs\assets\banner (1).png">
+            <img src="docs\assets\banner (1).webp">
             <div class="main" role="main">
                <h1 class="name"><a href="contact.html">Fabian Diaz</h1>
                <ul class="toc">
@@ -87,10 +87,9 @@
                <h5>A website for my stuff</h5>
                <p>Hi, my name is Fabian and I'm a student in the Bay Area. My main hobby is photography 
                   and I plan to take it more seriously as the years goes on. This website is a passion project
-                  and I'm excited to share some of my photos with everyone. Thanks! 
+                  and I'm excited to share some of my pictures with everyone. Thanks! 
                </p>
                <hr>
-               <div style="border-left: 1px solid #c1c1c1;height: 60px;margin-top: -167px;margin-left: 865.2px;"></div>
             </div>
          </div>
          <div class="footer" role="contentinfo">
