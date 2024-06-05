@@ -273,6 +273,15 @@
     .content .portret+h2+h3+ul {
     max-width:calc(400px + 30vw)
     }
+
+    .bunnies a {
+        color:#ececec
+    }
+
+    .bunnies h5 { 
+        
+    }
+
     }
     .content .rounded {
     border-radius: 4px
