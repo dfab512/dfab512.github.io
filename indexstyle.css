@@ -80,6 +80,11 @@
     position:fixed;
     top:81.5px
     }
+
+    .link {
+        color:#ffffff
+      }
+
     a {
     color: var(--link);
     text-decoration: none

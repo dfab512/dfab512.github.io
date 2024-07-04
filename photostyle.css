@@ -516,10 +516,9 @@
   }
 
   img {
-    margin: 13;
     padding: 5.5;
-    border: 0;
     vertical-align: baseline;
+    margin-bottom: -50;
   }
 
   }
