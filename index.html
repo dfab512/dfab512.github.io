@@ -2,100 +2,97 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>F. Diaz - Artsy Stuff</title>
+      <title>f. diaz – artsy stuff</title>
       <link rel="shortcut icon" type="image/x-icon" href="/docs/assets/icon.webp">
       <link rel="stylesheet" href="indexstyle.css">
-      <meta property="og:type" content="website">
-      <meta property="og:title" content="The Website">
-      <meta property="og:site_name" content="Fabian Diaz">
-      <meta property="og:links" content="Instagram Twitter YouTube">
-      <meta property="og:image" content="/docs/assets/icon.webp">
-      <meta property="og:image:alt" content="Fabian Diaz">
       <head>
    </head>
    <body>
       <div class="page layout-default">
          <div class="header" role="banner">
             <div class="sitename">
-               <h2><img class="sitename-logo" src="/docs/assets/icon.webp" loading="lazy"><a href="https://dfab512.github.io/">@dfab512</a></h2> 
+               <h2><img class="sitename-logo" src="/docs/assets/icon.webp" loading="lazy"><a href="https://dfab512.github.io/">@dfab512</a></h2>
             </div>
             <div class="sitename-banner"></div>
             <div class="navigation" role="navigation">
                <ul>
-                   <li>
-                       <a href="blog.html" class="blog">Blog</a>
-                   </li>
-                   <li>
-                       <a href="#">Photo/Video</a>
-                       <ul class="submenu">
-                           <li><a href="cameras.html">Cameras</a></li>
-                           <li><a href="photos.html">Photos</a></li>
-                           <li><a href="videos.html">Videos</a></li>
-                       </ul>
-                   </li>
+                  <li>
+                     <a href="blog.html" class="blog">blog</a>
+                  </li>
+                  <li>
+                     <a href="#">photo/video</a>
+                     <ul class="submenu">
+                        <li><a href="cameras.html">cameras</a></li>
+                        <li><a href="photos.html">photos</a></li>
+                        <li><a href="videos.html">videos</a></li>
+                     </ul>
+                  </li>
                </ul>
-           </div>
-               <script>
-                 document.addEventListener('DOMContentLoaded', function() {
-                     const menuItems = document.querySelectorAll('.navigation li a');
-                     const submenus = document.querySelectorAll('.navigation .submenu');
-
-                     menuItems.forEach(item => {
-                        item.addEventListener('click', function(event) {
-                           if (window.innerWidth <= 768) {
-                              const submenu = this.nextElementSibling;
-
-                              if (submenu) {
-                                 event.preventDefault();
-                                    submenu.classList.toggle('show-submenu');
-                           } 
-                        }
-                   });
+            </div>
+            <script>
+               document.addEventListener('DOMContentLoaded', function() {
+                   const menuItems = document.querySelectorAll('.navigation li a');
+                   const submenus = document.querySelectorAll('.navigation .submenu');
+               
+                   menuItems.forEach(item => {
+                      item.addEventListener('click', function(event) {
+                         if (window.innerWidth <= 768) {
+                            const submenu = this.nextElementSibling;
+               
+                            if (submenu) {
+                               event.preventDefault();
+                                  submenu.classList.toggle('show-submenu');
+                         } 
+                      }
+                 });
                });
-
-
+               
+               
                submenus.forEach(submenu => {
-                  submenu.addEventListener('click', function(event) {
-                     if (window.innerWidth <= 768) {
-                        event.stopPropagation();
-                  }
+                submenu.addEventListener('click', function(event) {
+                   if (window.innerWidth <= 768) {
+                      event.stopPropagation();
+                }
                });
-            });
-         });
-
-               </script>
-            </div>
-            <audio id="player" src="\docs\assets\cenizasyfuego.wav"></audio>
-            <p class="song">Song of the Week / Viento y Sol - Cenizas y Fuego</p>
-            <div class="song"> 
-               <button onclick="document.getElementById('player').play()">Play</button> 
-               <button onclick="document.getElementById('player').pause()">Pause</button> 
-               <button onclick="document.getElementById('player').volume += 0.1">+ </button> 
-               <button onclick="document.getElementById('player').volume -= 0.1">- </button> 
-            </div>
-            <div class="navigation-banner"></div>
+               });
+               });
+               
+            </script>
          </div>
-         <div class="content">
-            <img src="docs\assets\banner (1).webp">
-            <div class="main" role="main">
-               <h1 class="name"><a href="contact.html">Fabian Diaz</h1>
-               <ul class="toc">
-                  <h4>My Links</h4>
-                  <li class="toc2"><a href="https://www.instagram.com/dfab512/">Instagram</a></li>
-                  <li class="toc2"><a href="https://www.tiktok.com/@photographywalk">TikTok</a><a href="https://www.tiktok.com/@photographywalk"></a></li>
-                  <li class="toc2"><a href="https://dfab4.chatango.com/">Chatbox</a><a href="https://dfab4.chatango.com/"></a></li>
-               </ul>
-               <h5 class="bunnies">A website for my stuff  (and <u><a class="bunnies" href="bunnies.html">her bunnies</a></u>)</h5>
-               <p>Hi, my name is Fabian and I'm a student in the Bay Area. My main hobby is photography 
-                  and I plan to take it more seriously as the years goes on. This website is a personal project
-                  and I'm excited to share some of my visual work with everyone. Thanks! 
-               </p>
-               <hr>
-            </div>
+         <audio id="player" src="\docs\assets\05.mp3"></audio>
+         <p class="song">song of the week / go sailor - bigger than an ocean</p>
+         <div class="song"> 
+            <button onclick="document.getElementById('player').play()">play</button> 
+            <button onclick="document.getElementById('player').pause()">pause</button> 
+            <button onclick="document.getElementById('player').volume += 0.1">+ </button> 
+            <button onclick="document.getElementById('player').volume -= 0.1">- </button> 
          </div>
-         <div class="footer" role="contentinfo">
-            <div class="siteinfo-banner"></div>
+         <div class="navigation-banner"></div>
+      </div>
+      <div class="content">
+         <img src="docs\assets\banner (1).webp">
+         <div class="main" role="main">
+            <h1 class="name">
+               <a href="contact.html">
+                  fabian diaz
+            </h1>
+            <ul class="toc">
+            <h4>my links</h4>
+            <li class="toc2"><a href="https://www.instagram.com/dfab512/">instagram</a></li>
+            <li class="toc2"><a href="https://www.tiktok.com/@photographywalk">tiktok</a><a href="https://www.tiktok.com/@photographywalk"></a></li>
+            <li class="toc2"><a href="https://dfab4.chatango.com/">chatbox</a><a href="https://dfab4.chatango.com/"></a></li>
+            </ul>
+            <h5 class="bunnies">a website for my stuff  (and <u><a class="bunnies" href="bunnies.html">her bunnies</a></u>)</h5>
+            <p>hi, my name is fabian and i'm a student in the bay area. 
+               my main hobby is photography and i plan to take it more seriously as the years goes on. 
+               this website is my personal project and i'm excited to share some of my visual work with everyone. thanks! 
+            </p>
+            <hr>
          </div>
+      </div>
+      <div class="footer" role="contentinfo">
+         <div class="siteinfo-banner"></div>
+      </div>
       </div>
    </body>
 </html>

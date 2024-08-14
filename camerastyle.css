@@ -500,7 +500,7 @@ button {
 button:hover,button:focus,button:active {
     color: #444444;
     background-image: linear-gradient(to bottom,#838383,#838383);
-    padding: 2.5px 0px;
+    padding: 4px 20px;
     display: inline-block;
     max-width: 4em;
     color: #c5c5c5;
