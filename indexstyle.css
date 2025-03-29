@@ -1,5 +1,5 @@
 :root {
-    --bg: #141414;
+    --bg: #0e0e0e;
     --code-bg: #111;
     --notice1-bg: #653;
     --notice2-bg: #ede3e2;
@@ -122,7 +122,7 @@
     .content img {
     max-width: 100%;
     height: auto;
-    filter: grayscale(100%);
+    filter: grayscale(40%);
     }
     .content form {
     margin: 1em 0
